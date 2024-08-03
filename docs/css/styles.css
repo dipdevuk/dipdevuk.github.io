@@ -167,56 +167,43 @@ nav button:hover {
     overflow: hidden; /* Prevent content from overflowing grid items */
 }
 
-/* Style for the contact section */
 .contact {
-    text-align: center;
-    padding: 40px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-top: 1px solid #ddd; /* Add a border for separation */
-    margin-top: 20px; /* Space above the contact section */
-    border-radius: 5px; /* Rounded corners for a modern look */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Style for the contact form */
-.contact-form {
-    max-width: 600px; /* Limit the width of the form */
-    margin: 0 auto; /* Center the form horizontally */
-    background-color: #ffffff; /* White background for the form */
-    padding: 20px; /* Padding inside the form */
-    border: 1px solid #ddd; /* Border around the form */
-    border-radius: 5px; /* Rounded corners */
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-/* Style for form labels and inputs */
-.contact-form label {
-    display: block; /* Block display for labels */
-    margin-bottom: 10px; /* Space below each label */
-    font-weight: bold; /* Make labels bold */
+.contact p {
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.contact-form input, 
-.contact-form textarea {
-    width: 100%; /* Full width for inputs and textarea */
-    padding: 10px; /* Padding inside inputs and textarea */
-    margin-bottom: 15px; /* Space below each input/textarea */
-    border: 1px solid #ddd; /* Border around inputs and textarea */
-    border-radius: 5px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+.contact-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact-form button {
-    background-color: #0096c7; /* Button background color */
-    color: #ffffff; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size for the button text */
+.contact-list li {
+    margin-bottom: 10px;
 }
 
-.contact-form button:hover {
-    background-color: #02b9f5; /* Change background color on hover */
+.contact-list a {
+    color: #007bff;
+    text-decoration: none;
 }
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
 
 
 footer {
