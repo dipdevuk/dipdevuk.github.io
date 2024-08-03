@@ -1,0 +1,229 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #d1f3f9;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0096c7;
+    padding: 10px 20px;
+    border-bottom: 2px solid #dcf1f5;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: #ffffff;
+}
+
+.logo img {
+    max-height: 50px;
+    width: auto;
+}
+
+.nav-title {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav button {
+    padding: 10px 15px;
+    background-color: #0096c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #02b9f5;
+}
+
+#content {
+    background-color: #ffffff;
+    width: 1200px; /* Set a fixed width for the content area */
+    margin: 0 auto; /* Center the content area horizontally */
+    padding: 40px; /* Adjust padding as needed */
+    min-height: calc(100vh - 182px); /* Adjust this value if the header and footer heights change */
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80%; /* Adjust width to fit within the content area */
+    max-width: 960px; /* Ensure it doesn't exceed the content width */
+    min-height: 300px; /* Adjusted min-height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    overflow: hidden;
+}
+
+.hero-slider {
+    position: relative;
+    height: 400px;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.hero-link {
+    min-width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-link.active {
+    display: block;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px; /* Position left */
+}
+
+.next {
+    right: 10px; /* Position right */
+}
+
+.about {
+    text-align: center;
+    padding: 20px;
+}
+
+.project-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+    gap: 20px; /* Adjust spacing between project posts */
+    max-width: 960px; /* Match the content width */
+    margin: 0 auto; /* Center the grid within the content area */
+    overflow: hidden; /* Prevent overflow from grid items */
+}
+
+.project-post img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+
+.project-post {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 100%; /* Ensure grid items fit well */
+    overflow: hidden; /* Prevent content from overflowing grid items */
+}
+
+/* Style for the contact section */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-top: 1px solid #ddd; /* Add a border for separation */
+    margin-top: 20px; /* Space above the contact section */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+/* Style for the contact form */
+.contact-form {
+    max-width: 600px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #ffffff; /* White background for the form */
+    padding: 20px; /* Padding inside the form */
+    border: 1px solid #ddd; /* Border around the form */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for form labels and inputs */
+.contact-form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space below each label */
+    font-weight: bold; /* Make labels bold */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding inside inputs and textarea */
+    margin-bottom: 15px; /* Space below each input/textarea */
+    border: 1px solid #ddd; /* Border around inputs and textarea */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contact-form button {
+    background-color: #0096c7; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for the button text */
+}
+
+.contact-form button:hover {
+    background-color: #02b9f5; /* Change background color on hover */
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333333;
+    color: #ffffff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/DIP Logo.png" alt="Your Logo">
+            </div>
+            <h1 class="nav-title">The DIP Portfolio</h1>
+            <nav>
+                <button onclick="location.href='../index.html'">Home</button>
+                <button onclick="location.href='../projects.html'">Projects</button>
+                <button onclick="location.href='../contact.html'">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <div id="content">
+
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or just want to get in touch, feel free to send me a message using the form below.</p>
+            <form class="contact-form" action="your-server-endpoint" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+            
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
